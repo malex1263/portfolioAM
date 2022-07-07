@@ -1,0 +1,48 @@
+.about-block {
+	ul {
+		margin-bottom: 18px;
+		line-height: 1.4;
+		list-style-type: square;
+		padding-left: 19px;
+		//font-size: 18px;
+	}
+
+	.item-photo {
+		width: 240px;
+		margin: 20px 0;
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	.item-data {
+		margin-bottom: 40px;
+		font-size: 17px;
+	}
+
+
+	// = media ==== about-block ==========
+	@media (max-width: 400px) {
+		.item-photo {
+			width: 220px;
+			border-radius: 50%;
+	    overflow: hidden;
+	    height: 220px;
+	    margin: 20px auto;
+	    img {
+	    	height: 100%;
+	    	object-fit: cover;
+	    }
+		}
+
+		.item-name,
+	  .item-data {
+	   	text-align: center;
+	  }
+	  .item-data {
+	  	font-size: 14px;
+	  }
+	}
+}

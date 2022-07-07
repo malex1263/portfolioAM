@@ -1,0 +1,18 @@
+@keyframes gradient {
+	0% {
+		filter: hue-rotate(65deg);
+	}
+	25% {
+		filter: hue-rotate(65deg) grayscale(1);
+	}
+	50% {
+		filter: hue-rotate(341deg);
+	}
+
+	75% {
+		filter: hue-rotate(65deg) grayscale(1);
+	}
+	100% {
+		filter: hue-rotate(177deg);
+	}
+}

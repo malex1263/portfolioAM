@@ -1,0 +1,244 @@
+.window-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	opacity: 0;
+	pointer-events: none;
+	transition-delay: 0.1s ease-out;
+	transition-duration: .2s;
+	color: #fff;
+	padding: 60px;
+	padding-right: 52px;
+	background-color: var(--bg);
+	transform: scale(3.1);
+	
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: url('../images/1-1 (1).png') no-repeat center/cover;
+		z-index: -1;
+		transition-delay: 0.2s ease-out;
+		transition-duration: .4s;
+	}
+
+	&.open {
+		opacity: 1;
+		pointer-events: auto;
+		transform: scale(1);
+		&:after {
+			opacity: 0.9;
+			filter: blur(6px) brightness(0.5);
+		}
+
+		.content {
+			filter: blur(0);
+		}
+	}
+
+	&_about {
+		//background-color: var(--yellow);
+		.title-content {
+			color: var(--yellow);
+			&:before {
+				background: linear-gradient(45deg, var(--yellow), transparent);
+			}
+		}
+		.content {
+			&::-webkit-scrollbar-thumb {
+		    background: var(--yellow);
+			}
+		}
+	}
+	&_contacts {
+		//background-color: var(--green);
+		.title-content {
+			color: var(--green);
+			&:before {
+				background: linear-gradient(45deg, var(--green), transparent);
+			}
+		}
+		.content {
+			&::-webkit-scrollbar-thumb {
+		    background: var(--green);
+			}
+		}
+	}
+	&_works {
+		//background-color: var(--pink);
+		.title-content {
+			color: var(--pink);
+			&:before {
+				background: linear-gradient(45deg, var(--pink), transparent);
+			}
+		}
+		.content {
+			&::-webkit-scrollbar-thumb {
+		    background: var(--pink);
+			}
+		}
+	}
+
+	.content {
+		max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 15px;
+    filter: blur(6px);
+    transition-delay: 0.22s;
+		transition-duration: .4s;
+	  &::-webkit-scrollbar {
+			width: 8px;
+	    height: 5px;
+	    background: rgba(255,255,255, .12);
+	    border-radius: 10px;
+		}
+		&::-webkit-scrollbar-thumb {
+			width: 6px;
+	    border: 1px solid rgba(255,255,255, .12);
+	    border-radius: 10px;
+		}
+	}
+
+	.close-window {
+		position: absolute;
+		right: 39px;
+		top: 16px;
+		z-index: 1;
+		transition: opacity 0.2s;
+		opacity: 0.78;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.title-content {
+		font-family: FiraSansExtraBold;
+		font-size: 46px;
+		margin-bottom: 42px;
+		position: relative;
+		padding-bottom: 20px;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 50%;
+			height: 1px;
+		}
+	}
+
+	.title-items {
+		font-family: FiraSansExtraBold;
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+
+	ul {
+		font-family: FiraSansLight;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+
+	.nav-window {
+		position: absolute;
+		transform: translateY(-50%);
+		top: 50%;
+		cursor: pointer;
+		width: 20px;
+    height: 40px;
+    transition: opacity 0.2s;
+		opacity: 0.78;
+		&:before {
+			border-style: solid;
+			border-width: 2px 2px 0 0;
+			content: '';
+			display: inline-block;
+			height: 22px;
+			position: relative;
+			top: 8px;
+			transform: rotate(-45deg);
+			vertical-align: top;
+			width: 22px;
+			pointer-events: none;
+		}
+		&_left {
+			left: -50px;
+			&:before {
+				transform: rotate(-135deg);
+				left: 6px;
+			}
+		}
+		&_right {
+			right: -50px;
+			&:before {
+				transform: rotate(45deg);
+				right: 10px;
+			}
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+
+
+	//== media ==========.window-content ================
+	@media (max-width: 1280px) {
+		padding: 60px 24px 75px;
+
+		.nav-window {
+			bottom: 9px;
+			top: auto;
+			width: 15px;
+    	height: 29px;
+    	&:before {
+    		width: 16px;
+    		height: 16px;
+    		top: 6px;
+    	}
+			&_right {
+				right: 10px;
+				&:before {
+					right: 7px;
+				}
+			}
+			&_left {
+				right: 35px;
+				left: auto;
+				&:before {
+					left: 4px;
+				}
+			}
+		}
+
+		.close-window {
+			right: 13px;
+		}
+
+		ul {
+			font-size: 16px;
+		}
+
+		.title-items {
+			font-size: 21px;
+		}
+
+		.title-content {
+			font-size: 36px;
+			padding-bottom: 13px;
+			margin-bottom: 37px;
+		}
+	}
+
+	@media (orientation: landscape) and (max-width: 700px) {
+		height: 100vh;
+	}
+}
