@@ -3465,11 +3465,17 @@ p {
   -o-transition: all .22s;
   transition: all .22s;
   font-family: FiraSansRegular;
+  cursor: pointer;
+  border: 1px solid;
 }
 
 .btn,
 .btn:hover {
   background: transparent;
+}
+
+.DqBBlb {
+  height: 0;
 }
 
 .page-main {
@@ -3660,18 +3666,6 @@ p {
   font-family: MullerLight;
 }
 
-.contacts-block input.btn,
-.contacts-block textarea.btn {
-  background: var(--green);
-  color: #000;
-}
-
-.contacts-block input.btn:hover,
-.contacts-block textarea.btn:hover {
-  background: transparent;
-  color: var(--green);
-}
-
 .contacts-block input::-webkit-input-placeholder,
 .contacts-block textarea::-webkit-input-placeholder {
   color: var(--green);
@@ -3686,6 +3680,17 @@ p {
 
 .contacts-block input:-ms-input-placeholder,
 .contacts-block textarea:-ms-input-placeholder {
+  color: var(--green);
+}
+
+.contacts-block .btn {
+  background: var(--green);
+  color: #000;
+  border: 1px solid var(--green);
+}
+
+.contacts-block .btn:hover {
+  background: transparent;
   color: var(--green);
 }
 

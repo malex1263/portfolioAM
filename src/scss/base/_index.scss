@@ -119,7 +119,13 @@ h1, h2, h3, h4, h5, h6, p {
 	transition: all .22s;
 	background: transparent;
 	font-family: FiraSansRegular;
+	cursor: pointer;
+	border: 1px solid;
 	&:hover {
 		background: transparent;
 	}
+}
+
+.DqBBlb {
+	height: 0;
 }

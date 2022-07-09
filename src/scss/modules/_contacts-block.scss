@@ -80,19 +80,21 @@
 			font-family:  MullerLight;
 		}
 
-		&.btn {
-			background: var(--green);
-			color: #000;
-			&:hover {
-				background: transparent;
-				color: var(--green);
-			}
-		}
-
 		&::-webkit-input-placeholder { color: var(--green); }
 		&::-moz-placeholder          { color: var(--green); } 
 		&:-moz-placeholder           { color: var(--green); } 
 		&:-ms-input-placeholder      { color: var(--green); }
+	}
+
+
+	.btn {
+		background: var(--green);
+		color: #000;
+		border: 1px solid var(--green);
+		&:hover {
+			background: transparent;
+			color: var(--green);
+		}
 	}
 
 	textarea {
