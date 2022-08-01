@@ -114,7 +114,7 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				z-index: -1;
-				background-image: url('../images/1-1 (1).png');
+				background-image: url('../images/1-1 (1).webp');
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -138,9 +138,9 @@
 		&#item_about {
 			color: var(--yellow);
 			.inner {
-				background-image: url('../images/about.jpg');
+				background-image: url('../images/about.webp');
 				.inner_back-side {
-					background-image: url('../images/about-tooltipe.jpg');
+					background-image: url('../images/about-tooltipe.webp');
 				}
 			}
 			.nav-window_tooltip__icon {
@@ -152,9 +152,9 @@
 		&#item_contacts {
 			color: var(--green);
 			.inner {
-				background-image: url('../images/contacts.jpg');
+				background-image: url('../images/contacts.webp');
 				.inner_back-side {
-					background-image: url('../images/contacts-tooltipe.jpg');
+					background-image: url('../images/contacts-tooltipe.webp');
 				}
 			}
 			.nav-window_tooltip__icon {
@@ -166,9 +166,9 @@
 		&#item_works {
 			color: var(--pink);
 			.inner {
-				background-image: url('../images/works.jpg');
+				background-image: url('../images/works.webp');
 				.inner_back-side {
-					background-image: url('../images/works-tooltipe.jpg');
+					background-image: url('../images/works-tooltipe.webp');
 				}
 			}
 			.nav-window_tooltip__icon {
