@@ -221,31 +221,43 @@ th {
 @font-face {
   font-family: MullerRegular;
   src: url(../fonts/MullerRegular/MullerRegular.eot),url(../fonts/MullerRegular/MullerRegular.ttf),url(../fonts/MullerRegular/MullerRegular.woff),url(../fonts/MullerRegular/MullerRegular.woff2);
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: MullerLight;
   src: url(../fonts/MullerLight/MullerLight.eot),url(../fonts/MullerLight/MullerLight.ttf),url(../fonts/MullerLight/MullerLight.woff),url(../fonts/MullerLight/MullerLight.woff2);
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: FiraSansLight;
   src: url(../fonts/FiraSansLight/FiraSansLight.eot),url(../fonts/FiraSansLight/FiraSansLight.ttf),url(../fonts/FiraSansLight/FiraSansLight.woff),url(../fonts/FiraSansLight/FiraSansLight.woff2);
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: FiraSansRegular;
   src: url(../fonts/FiraSansRegular/FiraSansRegular.eot),url(../fonts/FiraSansRegular/FiraSansRegular.ttf),url(../fonts/FiraSansRegular/FiraSansRegular.woff),url(../fonts/FiraSansRegular/FiraSansRegular.woff2);
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: FiraSansExtraBold;
   src: url(../fonts/FiraSansExtraBold/FiraSansExtraBold.eot),url(../fonts/FiraSansExtraBold/FiraSansExtraBold.ttf),url(../fonts/FiraSansExtraBold/FiraSansExtraBold.woff),url(../fonts/FiraSansExtraBold/FiraSansExtraBold.woff2);
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: FiraSansBlack;
   src: url(../fonts/FiraSansBlack/FiraSansBlack.eot),url(../fonts/FiraSansBlack/FiraSansBlack.ttf),url(../fonts/FiraSansBlack/FiraSansBlack.woff),url(../fonts/FiraSansBlack/FiraSansBlack.woff2);
+  font-style: normal;
+  font-display: swap;
 }
 
 /*!
